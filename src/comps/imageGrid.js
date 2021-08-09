@@ -18,14 +18,13 @@ const ImageGrid = ({ setSelectedImg }) =>{
 
                     src={doc.url} alt="uploaded image"
                     initial={{ opacity: 0}}
-                    transition={{delay: 1}}
                     animate={{
                         scale: [1, 2, 2, 1, 1],
                         // rotate: [0, 0, 180, 180, 0],
                         borderRadius: ["3%", "3%", "10%", "10%", "3%"],
                         opacity: 1
                         }}
-                    
+                    transition={{delay: 1}}
                     />
                 </motion.div>
             ))}
